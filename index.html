@@ -3,32 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Will You Marry Me?</title>
+    <meta name="description" content="Matangi Corporation - Leading Provider of Air Compressors and Industrial Solutions">
+    <meta name="keywords" content="Air Compressors, Industrial Solutions, Equipment">
+    <meta name="author" content="Matangi Corporation">
+    <title>Matangi Corporation - Air Compressors</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <div class="content">
-            <h1>Will You Marry Me?</h1>
-            <p class="message">From the moment I met you, my world has been brighter. I've found a love more precious than anything I could have ever imagined. Will you make me the happiest person in the world?</p>
-            <div class="proposal-button">
-                <button id="proposalButton">Yes, I will!</button>
-            </div>
-            <!-- Hidden message -->
-            <p id="loveMessage" class="hiddenMessage">I love you too, until I die.</p>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <img src="file-TFaA8gLbpaDbNvDyugeNC6.webp" alt="Matangi Corporation Logo">
         </div>
-    </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <!-- Adding JavaScript -->
-    <script>
-        document.getElementById('proposalButton').addEventListener('click', function() {
-            // Hide the button when clicked
-            document.getElementById('proposalButton').style.display = 'none';
+    <!-- Main Banner Section -->
+    <section id="home" class="banner">
+        <h1>Welcome to Matangi Corporation</h1>
+        <p>Your trusted provider of high-quality air compressors and industrial solutions.</p>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <h2>Our Products</h2>
+        <div class="product-list">
+            <div class="product-item">
+                <img src="compressor1.jpg" alt="Compressor Model 1">
+                <h3>Compressor Model 1</h3>
+                <p>High efficiency, reliable performance for industrial use.</p>
+            </div>
+            <div class="product-item">
+                <img src="compressor2.jpg" alt="Compressor Model 2">
+                <h3>Compressor Model 2</h3>
+                <p>Ideal for heavy-duty operations and continuous performance.</p>
+            </div>
+            <div class="product-item">
+                <img src="compressor3.jpg" alt="Compressor Model 3">
+                <h3>Compressor Model 3</h3>
+                <p>Portable, energy-efficient, and perfect for on-the-go tasks.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about-us">
+        <h2>About Matangi Corporation</h2>
+        <p>At **Matangi Corporation**, we have been a trusted leader in manufacturing high-quality air compressors and industrial equipment for over 10 years. Our mission is to provide innovative solutions that improve productivity, energy efficiency, and safety for our clients.</p>
+        <p>With a global presence and a team of experts, we cater to a variety of industries, including manufacturing, automotive, construction, and energy. We strive for excellence and customer satisfaction in every product we offer.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any inquiries or need assistance, feel free to reach out to us.</p>
+        <form action="#" method="POST">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
             
-            // Show the love message
-            document.getElementById('loveMessage').classList.remove('hiddenMessage');
-        });
-    </script>
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 **Matangi Corporation**. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
